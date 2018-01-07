@@ -1,6 +1,10 @@
 # Littleutils
 
-## 1. pip_upgrader.py
+## I. utils
+   
+   The tools
+
+### 1. pip_upgrader.py
 #### This scripts is to upgrade the all packages installed in the python environment.
 
 usage:
@@ -10,7 +14,7 @@ usage:
     python pip_upgrade.py
     
     
-## 2. elasticDataHelper.py
+### 2. elasticDataHelper.py
 
 #### This .py script is like the elasticdump tool which is built as a pure python script. 
 #### Since the elasticdump is built and installed via node, it narrowed the available scenes.
@@ -38,3 +42,15 @@ usage:
     python elasticDataHelper.py -i http://127.0.0.1:9200/newindex/newtype -o http://127.0.0.1:9200/newindex1/newtype1 -t data -f field1 field2 filed3
     
     python elasticDataHelper.py --input http://127.0.0.1:9200/newindex/newtype --output http://127.0.0.1:9200/newindex1/newtype1 --type data --field field1 field2 filed3
+
+## II. ecl_cls
+
+    The encapsulated classes
+
+### 1. scpHandler.py
+
+#### This .py script is an encapsulated classes which could be used to scp files and dirs.
+
+### 2. splinterbrowser.py
+
+#### This .py script is an encapsulated classes which could be used to create a spliterbrowser that with or without proxy setting.
