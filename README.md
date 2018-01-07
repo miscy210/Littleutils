@@ -54,3 +54,7 @@ usage:
 ### 2. splinterbrowser.py
 
 #### This .py script is an encapsulated classes which could be used to create a spliterbrowser that with or without proxy setting.
+
+### 3. sqlHandler.py
+
+#### This .py script is an encapsulated classes which could be used with some mysql operations

@@ -1,3 +1,9 @@
+# -*- coding: utf8 -*-
+'''
+Created on 2017-11-14
+
+@author: miscy210 <miscy210@163.com>
+'''
 import os
 import platform
 
