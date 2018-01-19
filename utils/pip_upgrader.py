@@ -9,12 +9,13 @@ import platform
 
 def get_packagelist():
     result = os.popen("pip list")
+    result = "".join(list(result))
     if platform.system() == "Windows":
-        plst = list(result).split('\r\n')
+        plst = result.split('\r\n')
     elif platform.system() == "Linux":
-        plst = list(result).split('\n')
+        plst = result.split('\n')
     else:
-        plst = list(result).split('\r')
+        plst = result.split('\r')
     packageslist = [item.split(' ')[0] for item in plst]
     return packageslist
 
