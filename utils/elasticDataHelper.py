@@ -9,9 +9,11 @@ from elasticsearch import helpers
 try:
     import urllib.request as urllib
     import urllib.parse as urlparse
+    import urllib.error as urllib2
 except:
     import urllib
     import urlparse
+    import urllib2
 import time
 import json
 import traceback
@@ -183,7 +185,7 @@ def parse_es_url(es_host, index_name, doc_type, port=9200):
                 es_host = es_host.replace(this_port, port)
         try:
             urllib.urlopen(es_host)
-        except urllib.error.URLError:
+        except urllib2.URLError:
             other_protocol = "https" if protocol == "http" else "http"
             es_host = es_host.replace(protocol, other_protocol)
             return parse_es_url(es_host, index_name, doc_type)
